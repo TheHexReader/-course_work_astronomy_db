@@ -33,4 +33,4 @@ SELECT * FROM bodies WHERE bodies_orbiting_id = (SELECT id FROM bodies WHERE tit
 Для запуска данной базы данных требуется:
 - MySQL 8.*
 
-Для запуска базы данных, используйте (файл дампа)[dump_astronomy_db.sql]
+Для запуска базы данных, используйте [файл](https://github.com/TheHexReader/course_work_astronomy_db/blob/main/dump_astronomy_db.sql) дампа
