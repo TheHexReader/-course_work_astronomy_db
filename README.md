@@ -22,7 +22,7 @@ INSERT INTO `astronomy_db`.`bodies` (`title`, `chars_id`, `bodies_orbiting_id`) 
 
 Данный запрос удалит астрономический объект:
 ```sql
-DELETE FROM `astronomy_db`.`bodies` WHERE title = 'Плутон';
+DELETE FROM `astronomy_db`.`bodies` WHERE id = (SELECT * FROM (SELECT id FROM `astronomy_db`.`bodies` WHERE title = 'Плутон') AS t1);
 ```
 
 Данный запрос выведет спутники Сатурна:
